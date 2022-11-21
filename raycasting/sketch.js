@@ -29,12 +29,4 @@ function draw() {
   particle.update(mouseX, mouseY);
   particle.show();
   particle.look(walls);
-  // ray.show();
-  // ray.lookAt(mouseX, mouseY);
-  
-//   let pt = ray.cast(wall);
-//   if(pt){
-//     fill(255);
-//     ellipse(pt.x, pt.y, 8, 8);
-  // }
 }
