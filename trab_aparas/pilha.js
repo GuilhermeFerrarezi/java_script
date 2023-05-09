@@ -21,7 +21,7 @@ class pilha {
   pop() {
     let retorno;
     if (this.size == 0) {
-      console.log("Lista vazia");
+      console.log("Pilha vazia");
       return null;
     } else if (this.size == 1) {
       retorno = this.tail.item;
@@ -39,7 +39,7 @@ class pilha {
   imprimePilha() {
     let no_trab = this.head;
     if (this.size == 0) {
-      console.log("Lista vazia");
+      console.log("Pilha vazia");
     } else {
       for(let i = 0; i < this.size; i++) {
         console.log("%d ", no_trab.item);
