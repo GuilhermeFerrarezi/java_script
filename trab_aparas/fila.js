@@ -42,7 +42,7 @@ class fila {
       console.log("Fila vazia");
     } else {
       for(let i = 0; i < this.size; i++) {
-        console.log(no_trab.item);
+        console.log("%d ", no_trab.item);
         no_trab = no_trab.next;
       }
     }
