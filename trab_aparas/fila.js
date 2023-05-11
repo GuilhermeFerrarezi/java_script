@@ -5,8 +5,8 @@ class fila {
     this.tail = null;
   }
 
-  enqueue(item) {
-    let no_trab = new node(item);
+  enqueue(nome, sobrenome, email, cpf, telefone) {
+    let no_trab = new node_cliente(nome, sobrenome, email, cpf, telefone);
     if (this.size == 0) {
       this.head = no_trab;
       this.tail = no_trab;
@@ -24,11 +24,11 @@ class fila {
       console.log("Fila vazia");
       return null;
     } else if (this.size == 1) {
-      trab = this.head.item;
+      trab = this.head;
       this.head = null;
       this.tail = null;
     } else {
-      trab = this.head.item;
+      trab = this.head;
       this.head = this.head.next;
       this.head.prev = null;
     }
@@ -42,7 +42,7 @@ class fila {
       console.log("Fila vazia");
     } else {
       for(let i = 0; i < this.size; i++) {
-        console.log("%d ", no_trab.item);
+        console.log("Nome: " + no_trab.nome + "\nSobrenome: " + no_trab.sobrenome + "\nEmail: " + no_trab.email + "\nCPF: " + no_trab.cpf + "\nTelefone: " + no_trab.telefone + "\n");
         no_trab = no_trab.next;
       }
     }
