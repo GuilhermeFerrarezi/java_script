@@ -6,7 +6,7 @@ class pilha {
   }
 
   push(cnpj, razao_social, nome_fantasia, email, telefone) {
-    let no_trab = new Node_fornecedor(cnpj, razao_social, nome_fantasia, email, telefone);
+    let no_trab = new node_fornecedor(cnpj, razao_social, nome_fantasia, email, telefone);
     if (this.size == 0) {
       this.head = no_trab;
       this.tail = no_trab;
